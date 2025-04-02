@@ -1,0 +1,218 @@
+/** Ceci est un commentaire */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{font-family: 'Inter',sans-serif;
+
+}
+
+.slider{
+    width: 100%;
+    height: 80vh;
+    background-color: brown; 
+    position: relative;
+}
+
+.slider-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);        /** Luminosité du background */
+    filter: opacity(100%);          /** Opacité du background 100% -> Max 0% -> Min */
+
+}
+
+.slider-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+}
+
+h1{
+    color:rgb(149, 18, 18);       /** Couleur du texte */
+    size: 5rem;               /** Taille du texte */
+    font-weight: 800;           /** Largeur du texte ig*/
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+p{
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+.slider-content p{
+    color: blueviolet;
+    size: 2rem;
+    font-weight: 400;
+}   
+
+.titre-about-me{
+    text-align: center;
+}
+
+.section{
+    padding: 100px 0;
+}
+
+.boxed{
+    max-width: 1280px;
+    margin-inline:auto;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.flex{
+    display: flex;
+
+}
+
+.flex p{
+    text-align: left;
+    color: rgba(168, 140, 16, 0.792);
+}
+
+.flex h2{
+    text-align: center;
+}
+
+.dark{
+    background: url(../img/Background_test_1.jpg);
+    background-size: cover;
+    color: #fff;
+
+}
+
+/** .bg1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);        /** Luminosité du background */
+    /**filter: opacity(100%);          /** Opacité du background 100% -> Max 0% -> Min
+} */
+
+.text-center{
+    text-align: center;
+
+}
+
+.w25{
+    width: 25%;
+}
+
+.w32{
+    width: 32%;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.skill{
+    flex: 1;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 150px;
+
+}
+
+.skill img{
+    max-width: 80px;
+    height: auto;
+}
+
+.skill h3{
+    color: #000;    
+    margin-top: 10px;
+}
+
+.gap20{
+    gap: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projet{
+    height: auto;
+    aspect-ratio: 1/1; /* 1/1 -> Carré */
+    position: relative;    
+    text-decoration: none;
+    color: #FFF;
+}
+
+.projet h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #ffffff;
+    width: max-content;
+    opacity:0;
+    transition: 1s ease;
+}
+
+.projet a{
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+
+.projet img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    transition: .4s ease;
+}
+
+.projet:hover img{
+    filter: brightness(60%);
+}
+
+.projet:hover h3{
+    opacity:1;
+}
+
+.icon{
+    display: block;
+    font-size: 1.5rem !important;
+}
+
+.label{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.value{
+    display: block;
+    font-size: 1.2rem;
+}
+
+/**.w40{
+    width: 40%;
+}
+
+.w60{
+    width: 60%;
+}
+*/
