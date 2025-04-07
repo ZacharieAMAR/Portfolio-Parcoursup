@@ -2,30 +2,48 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <meta type="description" content="Voici mon Portfolio étudiant" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css" type="text/css"/>
+    <link rel="icon" href="img/gros_michel.png" type="png"/>
 
 
 </head>
 <body>
+    <header class="header">
+        <div class="boxed">
+            <div class="flex align-center space-between">
+                <a href="https://zacharieamar.github.io/Portfolio-Parcoursup/" class="header-logo">
+                    <img src="img/gros_michel.png">
+                </a>
+                <ul class="header-menu">
+                    <li><a href="/">Acceuil</a></li>
+                    <li><a href="/">À propos</a></li>
+                    <li><a href="/">Compétences</a></li>
+                    <li><a href="/">Projets</a></li>
+                    <li><a href="/">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
 
     <div class="slider">
         <img src="img\Background_test_1.jpg" class="slider-background">
-        <div class="slider-content">
+        <div class="slider-content egg-txt">
             <h1>Zacharie AMAR</h1>
             <p>Je suis étudiant</p>
         </div>
     </div>
     <div class="section">
         <div class="boxed">
-            <div class="flex">
-                <div class="titre-about-me">
+                <div class="titre-about-me egg-txt">
                     <h2>À propos de moi</h2>
                 </div>
-                <div class="w60">
+                <div class="about-me egg-txt">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum accumsan tellus,
                      ac accumsan est consequat a. Curabitur blandit sit amet ante sit amet fringilla. Nulla arcu orci,
                      convallis et ornare eget, malesuada eget arcu. Nullam faucibus pretium lectus et porttitor. 
@@ -33,18 +51,13 @@
                      sit amet tincidunt nisl. Cras in velit diam. Phasellus vitae pulvinar est, rutrum bibendum massa. 
                      Ut porta aliquam tristique. Curabitur hendrerit dictum diam et sollicitudin. Suspendisse ac leo ex.</p>
                 </div>
-
-            </div>
-
         </div>
-
     </div>
-
     <div class="section dark">
-        <div class="boxed text-center">
+        <div class="boxed text-center egg-txt">
             <h2>Mes compétences</h2>
             <div class="flex gap20 skills-container">
-                <div class="skill">
+                <div class="skill egg-txt">
                     <img src="img/Logo HTML5.png">
                     <h3>HTML</h3>
                 </div>
@@ -65,66 +78,67 @@
     </div>
 
     <div class="section">
-        <div class="boxed text-center">
+        <div class="boxed text-center egg-txt">
             <h2>Mes projets</h2>
             <div class="flex wrap gap20 space-between"> 
                 <div class="w32 projet">
                     <a href="/">
-                        <img src="img/pointless_img.png">
-                        <h3>Résultats Politiscales</h3>
+                        <img src="img/guy_staring_at_computer_meme.png">
+                        <h3>Work In Progress</h3>
                     </a>
                 </div>
                 <div class="w32 projet">
                     <a href="/">
-                        <img src="img/pointless_img.png">
+                        <img src="img/guy_staring_at_computer_meme.png">
+                        <h3>Work In Progress</h3>
                     </a>
                 </div>
                 <div class="w32 projet">
                     <a href="/">
-                        <img src="img/pointless_img.png">
+                        <img src="img/Montage_illu.jpg">
+                        <h3>Audiovisuel</h3>
                     </a>
                 </div>
                 <div class="w32 projet">
                     <a href="/">
-                        <img src="img/pointless_img.png">
+                        <img src="img/Banane_montagne.jpg">
+                        <h3>Photographie</h3>
                     </a>
                 </div>
                 <div class="w32 projet">
                     <a href="/">
-                        <img src="img/pointless_img.png">
+                        <img src="img/guy_staring_at_computer_meme.png">
+                        <h3>Work In Progress</h3>
                     </a>
                 </div>
                 <div class="w32 projet">
                     <a href="/">
-                        <img src="img/pointless_img.png">
-                    </a>
-                </div>
-                <div class="w32 projet">
-                    <a href="/">
-                        <img src="img/pointless_img.png">
-                    </a>
-                </div>
-                <div class="w32 projet">
-                    <a href="/">
-                        <img src="img/pointless_img.png">
-                    </a>
-                </div>
-                <div class="w32 projet">
-                    <a href="/">
-                        <img src="img/pointless_img.png">
+                        <img src="img/guy_staring_at_computer_meme.png">
+                        <h3>Work In Progress</h3>
                     </a>
                 </div>
             </div>
         </div>
     </div>
     <div class="section dark">
-        <div class="boxed text-center">
+        <div class="boxed text-center egg-txt">
             <h2>Me contacter</h2>
-            <div class="flex space-between"></div>
-            <div class="w32">
-                <span class="material-icons icon">mail</span>
-                <span class="label">E-mail</span>
-                <span class="value">zacharie.amar7274@gmail.com</span>
+            <div class="flex space-between">
+                <div class="w32">
+                    <span class="material-icons icon">mail</span>
+                    <span class="label">E-mail</span>
+                    <span class="value">zacharie.amar7274@gmail.com</span>
+                </div>
+                <div class="w32">
+                    <span class="material-icons icon">terminal</span>
+                    <span class="label">GitHub</span>
+                    <span class="value">https://github.com/ZacharieAMAR</span>
+                </div>
+                <div class="w32">
+                    <span class="material-icons icon">terminal</span>
+                    <span class="label">GitHub</span>
+                    <span class="value">https://github.com/ZacharieAMAR</span>
+                </div>
             </div>
         </div>
     </div>
