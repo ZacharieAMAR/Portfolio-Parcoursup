@@ -33,7 +33,7 @@ body{font-family: 'Inter',sans-serif;
 }
 
 h1{
-    color:rgb(149, 18, 18);       /** Couleur du texte */
+    /*color:rgb(255, 255, 255);       /** Couleur du texte */
     size: 5rem;               /** Taille du texte */
     font-weight: 800;           /** Largeur du texte ig*/
 }
@@ -49,7 +49,6 @@ p{
 }
 
 .slider-content p{
-    color: blueviolet;
     size: 2rem;
     font-weight: 400;
 }   
@@ -58,8 +57,14 @@ p{
     text-align: center;
 }
 
+.about-me{
+    width: 100%;
+    text-align: center;
+}
+
 .section{
     padding: 100px 0;
+    background-color: #252c31;
 }
 
 .boxed{
@@ -73,20 +78,30 @@ p{
 
 .flex{
     display: flex;
+    gap: 5px;
 
 }
 
 .flex p{
     text-align: left;
-    color: rgba(168, 140, 16, 0.792);
+    color: #FFF;
 }
 
 .flex h2{
     text-align: center;
 }
 
+.white-txt{
+    color: #FFF;
+}
+
+.egg-txt{
+    color: #f6f4e1;
+}
+
 .dark{
-    background: url(../img/Background_test_1.jpg);
+    /*background: url(../img/Background_test_1.jpg); */
+    background-color: #1f2529;
     background-size: cover;
     color: #fff;
 
@@ -120,7 +135,7 @@ p{
 .skill{
     flex: 1;
     text-align: center;
-    background: #ffffff;
+    background: #252c31;
     border-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
@@ -133,8 +148,7 @@ p{
     height: auto;
 }
 
-.skill h3{
-    color: #000;    
+.skill h3{   
     margin-top: 10px;
 }
 
@@ -216,3 +230,58 @@ p{
     width: 60%;
 }
 */
+.align-center{
+    align-items: center;
+}
+
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background: #1f2529;
+    z-index: 999;
+    padding-block: 10px;
+    box-shadow: 1px 1px 25px #000000;
+}
+
+.header-logo{
+    display: block;
+}
+
+.header-logo img{
+    width: 50px;
+}
+
+/*.header-logo img:hover{
+    background: #3e474d;
+}*/
+
+.header-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-menu li a{
+    text-decoration: none;
+    color: #f6f4e1;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.header-menu li a:hover{
+    background-color: #3e474d;
+    transition:.2s ease;
+}
+
+@media(max-width:844px){  /*Applique une condition -> Tout ce qui est après répond à la condition. Ici écran de max 844 pixels */
+    header{
+        display: none;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    
+}
